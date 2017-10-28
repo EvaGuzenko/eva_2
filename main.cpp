@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main(){
+int N,S=0;
+cin >> N;
+int*A=new int [N];
+for(int i=0; i<N;i++){
+cin >> A[i];}
+for(int i=0;i<N; i++){
+if(A[i]%27==0){
+if(A[i]%72!=0){
+S+=A[i];
+}
+}
+else{
+if(A[i]%72==0){
+S+=A[i];}
+}
+}
+cout << S;
+delete []A;
+return 0;
+}
